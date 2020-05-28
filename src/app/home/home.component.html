@@ -1,0 +1,22 @@
+<div class="jumbotron">
+    <h1>Welcome</h1>
+    <h2>Angular & Bootstrap Demo</h2>
+  </div>  
+  <div class="row">
+  <div class="card bg-light card-body" style="width:400px">
+    <div class="card-header bg-primary">Status</div>
+    <div class="card-text">
+      <h5>{{title}}</h5>
+    </div>
+  </div>
+  <div class="card bg-light card-body" style="width:400px">
+    <div class="card-header bg-primary">Counter</div>
+    <div class="card-text">
+      <h5>{{title}}</h5>
+      <button type="button" class="btn btn-success" (click) = "onClick()">Click Here</button>
+      <button type="button" class="btn btn-success" (click) = "onRem()">Reset</button>
+        
+        <h6>You clicked {{counter}} times</h6>
+    </div>
+  </div>
+</div>
