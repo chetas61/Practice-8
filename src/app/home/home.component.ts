@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   title = 'Let\'s Blog';
+  name = "ABC";
   counter = 0;
   onClick(){
     this.counter+=1;

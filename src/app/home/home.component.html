@@ -3,20 +3,33 @@
     <h2>Angular & Bootstrap Demo</h2>
   </div>  
   <div class="row">
-  <div class="card bg-light card-body" style="width:400px">
+  <div class="card bg-light card-body" style="width:300px">
     <div class="card-header bg-primary">Status</div>
     <div class="card-text">
       <h5>{{title}}</h5>
     </div>
   </div>
-  <div class="card bg-light card-body" style="width:400px">
+  <div class="card bg-light card-body" style="width:300px">
     <div class="card-header bg-primary">Counter</div>
     <div class="card-text">
       <h5>{{title}}</h5>
-      <button type="button" class="btn btn-success" (click) = "onClick()">Click Here</button>
-      <button type="button" class="btn btn-success" (click) = "onRem()">Reset</button>
+      <button type="button" class="btn btn-success mr-3" (click) = "onClick()">Click Here</button>
+      <button type="button" class="btn btn-success ml-3" (click) = "onRem()">Reset</button>
         
         <h6>You clicked {{counter}} times</h6>
     </div>
   </div>
+
+  <div class="card bg-light card-body" style="width:300px">
+    <div class="card-header bg-primary">Counter</div>
+    <div class="card-text">
+      <h5>{{title}}</h5>
+        <input [(ngModel)]= "name" type="text" class="form-control" placeholder="Enter text" id="text">
+        <h6>You entered: {{name}}</h6>
+    </div>
+  </div>
+</div>
+<br><hr>
+<div class="row">
+  <a [routerLink]="'add'"><button class = "btn btn-success">ADD POST</button></a>
 </div>
