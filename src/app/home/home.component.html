@@ -28,6 +28,18 @@
         <h6>You entered: {{name}}</h6>
     </div>
   </div>
+
+  <div *ngFor="let p of post" class="card bg-light card-body" style="width:300px">
+    <div class="card-header bg-primary text-light">Blog {{p.id}}</div>
+    <div class="card-text">
+      <h3>Title:- {{p.title}}</h3>
+      <br>
+      Content:-
+      <h5>{{p.content}}</h5>
+    </div>
+  </div>
+
+
 </div>
 <br><hr>
 <div class="row">
